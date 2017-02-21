@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns=["/usuariocontroller"])
+@WebServlet(urlPatterns="/usucontroller")
 public class UsuarioController extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
@@ -19,7 +19,7 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 		//Capturando o que vem do client
 	String email = req.getParameter("email");
 		//Respondendo ao client
-	resp.getWriter().print("Olá "+email);
+	resp.getWriter().print("\n\n\n\nOla "+email);
 }	
 
 }
